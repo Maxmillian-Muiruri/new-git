@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .circle-motion {
+        background-color: bisque;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        font-weight: bold;
+        align-items: center;
+        position: relative;
+        animation: circleMove 4s linear infinite;
+      }
+      @keyframes circleMove {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(60px, 0) translateY(60px);
+        }
+        50% {
+          transform: translate(0, 120px);
+        }
+        75% {
+          transform: translate(-60px, 0) translateY(60px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+      p {
+        font-size: 20px;
+        text-decoration-style: dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle-motion">
+      <h1>Getting Started with Software Development</h1>
+      <p>
+        Starting your journey in software development is a great decision!<br />
+        It opens doors to creativity, problem-solving, and endless
+        opportunities.<br />
+        Keep learning, stay curious, and enjoy building amazing things.
+      </p>
+    </div>
+  </body>
+</html>
